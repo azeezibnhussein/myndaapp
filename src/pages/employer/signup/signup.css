@@ -15,6 +15,10 @@
 	background-color: white;
 }
 
+.form-header a {
+	margin-top: 1.2em;
+}
+
 .form-header-arrow {
 	padding-right: 2.5em;
 }
@@ -86,5 +90,18 @@
 }
 
 .existing-user-alt {
-	margin-top: 0;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	gap: .5em;
+}
+
+.existing-user-alt a {
+	font-weight: 600;
+	color: #204ECF;
+}
+
+.terms-and-conditions-link a{
+	font-weight: 600;
+	color: #204ECF;
 }

@@ -1,0 +1,20 @@
+.h-form-header {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #D4D3D380;
+	background-color: #FFF;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.h-form-header p {
+	margin-top: 1.4em;
+	font-family: montserrat;
+	font-weight: 400px;
+	font-size: 14px;
+}
+
+.h-header-message {
+	text-align: left;
+	font-weight: 500;
+}

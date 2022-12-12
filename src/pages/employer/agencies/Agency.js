@@ -5,6 +5,7 @@ import arrowL from "../../../assets/images/arrowL.svg";
 import mfdagency from "../../../assets/images/mfdagency.svg";
 import like from "../../../assets/images/like.svg";
 import location from "../../../assets/images/location.svg";
+import {Link} from "react-router-dom";
 
 
 function Agency () {
@@ -13,9 +14,9 @@ function Agency () {
       <div className="o-container agencies-body">
         <header className="message-header">
           <div className="message-header-arrow">
-            <a href="/home">
+            <Link to = "/employer/home">
               <img src={arrowL} alt="placeholder"></img>
-            </a>
+            </Link>
           </div>
           <div className="message-header-text">
             <h4>Agencies</h4>

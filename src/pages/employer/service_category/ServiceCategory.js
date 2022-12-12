@@ -3,7 +3,6 @@ import '../../../assets/styles/global-styles.css';
 import './service-category.css';
 import '../home/home.css';
 import arrowL from "../../../assets/images/arrowL.svg";
-
 import househelp from '../home/images/househelp.svg';
 import driver from '../home/images/driver.svg';
 import gardner from '../home/images/gardner.svg';
@@ -14,15 +13,16 @@ import bodyguard from './images/bodyguard.svg';
 import drycleaner from './images/drycleaner.svg';
 import messenger from './images/messenger.svg';
 import teacher from './images/teacher.svg';
+import {Link} from "react-router-dom";
 
 function ServiceCategory () {
 	return (
     <>
       <div className="service-category-header">
         <div>
-          <a href= "/employer/home">
+          <Link to =  "/employer/home">
             <img src={arrowL} alt="back"></img>
-          </a>
+          </Link>
         </div>
         <h4>Service Category</h4>
       </div>

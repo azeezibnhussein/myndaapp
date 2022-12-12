@@ -6,7 +6,10 @@ import Navbar from "../../../components/navbar/Navbar";
 import SearchBar from "../../../components/search_bar/SearchBar";
 import dp from "./images/dp.svg";
 import patienticon from "./images/patienticon.svg";
-import femaledoctor from './images/femaledoctor.svg';
+import healthworker from "./images/healthworker.svg";
+import { BsPerson } from "react-icons/bs";
+import { Link } from "react-router-dom";
+
 
 const LabHomePage = () => {
   let picture = dp;
@@ -25,15 +28,67 @@ const LabHomePage = () => {
               <h3>Set up your Lab Services today</h3>
               <button>Get started</button>
             </div>
-            <div>
-              <img src={femaledoctor} alt="placeholder"></img>
+            <div className="lab-s-img-container">
+              <img src={healthworker} alt="placeholder"></img>
             </div>
           </section>
+
           <div className="new-patient-orders">
             <div className="new-patient-orders-head">
-              <h4></h4>
+              <h4>New Patient Orders</h4>
+              <Link to ="#" className="body-color-blue">
+                See all
+              </Link>
             </div>
-            <div className="new-patient-orders-body"></div>
+            <div className="new-patient-orders-body">
+              <div className="orders-col">
+                <div className="orders-col-1">
+                  <span className="bs-person-container">
+                    <BsPerson className="bs-person" />
+                  </span>
+                  <p>Code- 121212</p>
+                </div>
+                <div className="orders-col-2">
+                  <p>10/10/21</p>
+                </div>
+              </div>
+
+              <div className="orders-col">
+                <div className="orders-col-1">
+                  <span className="bs-person-container">
+                    <BsPerson className="bs-person" />
+                  </span>
+                  <p>Code- 121212</p>
+                </div>
+                <div className="orders-col-2">
+                  <p>10/10/21</p>
+                </div>
+              </div>
+
+              <div className="orders-col">
+                <div className="orders-col-1">
+                  <span className="bs-person-container">
+                    <BsPerson className="bs-person" />
+                  </span>
+                  <p>Code- 121212</p>
+                </div>
+                <div className="orders-col-2">
+                  <p>10/10/21</p>
+                </div>
+              </div>
+
+              <div className="orders-col">
+                <div className="orders-col-1">
+                  <span className="bs-person-container">
+                    <BsPerson className="bs-person" />
+                  </span>
+                  <p>Code- 121212</p>
+                </div>
+                <div className="orders-col-2">
+                  <p>10/10/21</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

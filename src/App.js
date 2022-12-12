@@ -1,4 +1,5 @@
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Onboarding1 from "./pages/splash_pages/Onboarding1";
 import Onboarding2 from "./pages/splash_pages/Onboarding2";
@@ -11,9 +12,10 @@ import Message from "./pages/employer/message_and_notification/Message";
 import Notification from "./pages/employer/message_and_notification/Notification";
 import ServiceCategory from "./pages/employer/service_category/ServiceCategory";
 import Agency from "./pages/employer/agencies/Agency";
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LabHomePage from "./pages/laboratory/home/LabHomePage";
+import VerifyNumber from "./pages/employer/number verification/VerifyNumber";
+import LabSignup from "./pages/laboratory/signup/LabSignup";
+import LabLogin from "./pages/laboratory/login/LabLogin";
 
 function App() {
   return (
@@ -38,6 +40,9 @@ function App() {
             element={<ServiceCategory />}
           ></Route>
           <Route path="/laboratory/home" element={<LabHomePage />}></Route>
+          <Route path="/laboratory/login" element={<LabLogin />}></Route>
+          <Route path="/laboratory/signup" element={<LabSignup />}></Route>
+          <Route path="/employer/verify" element={<VerifyNumber />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

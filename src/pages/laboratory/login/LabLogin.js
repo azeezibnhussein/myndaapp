@@ -1,18 +1,17 @@
 import React from "react";
-import './login.css';
-import clap from './images/clap.svg';
+import "./lab-login.css";
+import clap from "../../employer/login/images/clap.svg";
 import {Link} from "react-router-dom";
 
-function Login () {
+const LabLogin = () => {
 	return (
 		<>
-		<LoginForm />
+		<LabLoginForm/>
 		</>
 	)
 }
-
-function LoginForm () {
-	return (
+function LabLoginForm() {
+  return (
     <>
       <div className="login-body">
         <div className="login-form-header">
@@ -39,38 +38,37 @@ function LoginForm () {
           <p>Forgot Password?</p>
         </div>
         <div className="btn-container">
-          <Link to = "/employer/home">
+          <Link to = "/laboratory/home">
             <button className="login-btn">Login</button>
           </Link>
         </div>
         <div className="existing-user-alt">
-          <p>Don't have an account?</p> <Link to ="/employer/signup">Sign up</Link>
+          <p>Don't have an account?</p> <Link to = "/laboratory/signup">Sign up</Link>
         </div>
       </div>
     </>
   );
-	
 }
 
-function FormItem (props) {
-	const {Icon} = props;
-	return (
-       <form>
-        <div className="form-item">
-            <label className='forms-items' htmlFor={props.name}>{props.label}</label>
-              <div className='input-container'>
-                <span>
-                {
-                  Icon && (
-                    <Icon />
-                  )
-                }
-                </span>
-                <input type={props.type} className="form-control input" id={props.name}  placeholder={props.placeholder} onChange= {(e) => props.changeFunction(e) }/>
-              </div>
+function FormItem(props) {
+  const { Icon } = props;
+  return (
+    <form>
+      <div className="form-item">
+        <label className="forms-items" htmlFor={props.name}>
+          {props.label}
+        </label>
+        <div className="input-container">
+          <span>{Icon && <Icon />}</span>
+          <input
+            type={props.type}
+            className="form-control input"
+            id={props.name}
+            placeholder={props.placeholder}
+            onChange={(e) => props.changeFunction(e)}
+          />
         </div>
-        </form>
-	)
-
-}
-export default Login;
+      </div>
+    </form>
+  );
+}export default LabLogin;

@@ -36,3 +36,14 @@
 	color: #fff;
 	background-color: #204ECF;
 }
+
+.existing-user-alt {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	gap: .5em;
+}
+
+.existing-user-alt Link {
+	font-weight: 800px;
+}

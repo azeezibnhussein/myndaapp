@@ -23,8 +23,9 @@ import lessonteacher from "./images/lessonteacher.svg";
 import dp from "./images/dp.svg";
 import SearchBar from "../../../components/search_bar/SearchBar";
 import serviceicon from "./images/serviceicon.svg";
+import {Link} from "react-router-dom";
 
-function HomePage() {
+const HomePage = () => {
   let picture = dp;
   let icon = serviceicon;
 
@@ -32,7 +33,7 @@ function HomePage() {
     <>
       <div className="o-container">
         <MainHeader picture={picture}></MainHeader>
-        <Navbar icon ={icon}></Navbar>
+        <Navbar icon={icon}></Navbar>
 
         <div className="container">
           <SearchBar />
@@ -49,7 +50,9 @@ function HomePage() {
 
           <div className="category-description">
             <h4>Service Category</h4>
-            <a href="/employer/service_category">See all</a>
+            <Link to = "/employer/service_category" className = "body-color-blue">
+              See all
+            </Link>
           </div>
 
           <section className="service-category">
@@ -79,7 +82,9 @@ function HomePage() {
 
           <div className="category-description">
             <h4>Agencies</h4>
-            <a href="/employer/agencies">See all</a>
+            <Link to = "/employer/agencies" className="body-color-blue" >
+              See all
+            </Link>
           </div>
           <section className="agency-category">
             <div className="agency-category-row">
@@ -196,7 +201,9 @@ function HomePage() {
 
           <div className="category-description">
             <h4>Top Myndas</h4>
-            <a href="#">See all</a>
+            <Link to = "#" className="body-color-blue">
+              See all
+            </Link>
           </div>
           <section className="mynda-category">
             <div className="mynda-category-row">

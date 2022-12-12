@@ -51,3 +51,40 @@
 	padding-right: 7.5em;
 	padding-left: 1em;
 }
+
+.back-arrow {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 1em;
+}
+
+.body-color-grey {
+	color: #8E8E8E;
+}
+
+.body-color-blue {
+	color: #204ECF;
+}
+
+.app-btn-blue {
+	width: 95%;
+	font-size: 17px;
+	font-family: montserrat-bold;
+	padding: 1em;
+	border-radius: 5px;
+	width: 100%;
+	color: #fff;
+	background-color: #204ECF;
+}
+
+.app-btn-grey {
+	width: 95%;
+	font-size: 16px;
+	font-family: montserrat-semibold;
+	font-weight: 500px;
+	padding: 1em;
+	border-radius: 5px;
+	width: 100%;
+	color: #000;
+	background-color: #D4D3D3;
+}

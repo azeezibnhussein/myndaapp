@@ -7,6 +7,7 @@ import agent from './images/agent.svg';
 import employer from './images/employer.svg';
 import hospital from './images/hospital.svg';
 import arrow from './images/arrow.svg';
+import {Link} from "react-router-dom";
 
 function Roles () {
 	return (
@@ -35,11 +36,13 @@ function Roles () {
             <h4>Are you a Maid/Mynda?</h4>
             <p>Create an account</p>
           </div>
-          <img
-            className="mynda-roles-arrow"
-            src={arrow}
-            alt="placeholder"
-          ></img>
+          <Link to = "/mynda/createaccount" className="employer-link">
+            <img
+              className="mynda-roles-arrow"
+              src={arrow}
+              alt="placeholder"
+            ></img>
+          </Link>
         </div>
 
         <div className="mynda-roles-container">
@@ -52,11 +55,13 @@ function Roles () {
             <h4>Are you an Agent?</h4>
             <p>Create an account</p>
           </div>
-          <img
-            className="mynda-roles-arrow"
-            src={arrow}
-            alt="placeholder"
-          ></img>
+          <Link to = "/agent/createaccount" className="employer-link">
+            <img
+              className="mynda-roles-arrow"
+              src={arrow}
+              alt="placeholder"
+            ></img>
+          </Link>
         </div>
 
         <div className="mynda-roles-container">
@@ -65,13 +70,13 @@ function Roles () {
             <h4>Are you an Employer?</h4>
             <p>Create an account</p>
           </div>
-          <a href= "/employer/signup">
+          <Link to = "/employer/signup" className="employer-link">
             <img
               className="mynda-roles-arrow"
               src={arrow}
               alt="placeholder"
             ></img>
-          </a>
+          </Link>
         </div>
 
         <div className="mynda-roles-container">
@@ -84,11 +89,13 @@ function Roles () {
             <h4>Are you a Lab/Hospital?</h4>
             <p>Create an account</p>
           </div>
-          <img
-            className="mynda-roles-arrow"
-            src={arrow}
-            alt="placeholder"
-          ></img>
+          <Link to = "/laboratory/signup" className="employer-link">
+            <img
+              className="mynda-roles-arrow"
+              src={arrow}
+              alt="placeholder"
+            ></img>
+          </Link>
         </div>
       </div>
     </>
