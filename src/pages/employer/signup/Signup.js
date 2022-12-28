@@ -2,7 +2,7 @@ import React from "react";
 import "./signup.css";
 import "../../../assets/styles/global-styles.css";
 import arrowL from "../../../assets/images/arrowL.svg";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Signup() {
   return (
@@ -19,7 +19,7 @@ function SignupForm() {
     <>
       <div className="signup-body">
         <div className="form-header">
-          <Link to = "/roles">
+          <Link to="/roles">
             <img
               className="form-header-arrow"
               src={arrowL}
@@ -48,12 +48,13 @@ function SignupForm() {
               placeholder="Eg +234"
               label="Phone Number"
             ></FormItem>
-            <FormItem
-              name="gender"
-              type="select"
-              placeholder="Select one..."
-              label="Gender"
-            ></FormItem>
+            <div className="gender">
+              <label>Gender</label>
+              <select className="gender-select">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
             <FormItem
               name="residentialAddress"
               type="text-area"
@@ -77,18 +78,19 @@ function SignupForm() {
         <div className="terms-and-conditions-link">
           <p>
             By clicking "Signup", you accept the
-            <Link to = "/mynda/terms" target="_blank" rel="noreferrer">
-            Terms of service and Privacy Policy</Link>
+            <Link to="/mynda/terms" target="_blank" rel="noreferrer">
+              Terms of service and Privacy Policy
+            </Link>
           </p>
         </div>
         <div className="btn-container">
-          <Link to = "/employer/verify">
+          <Link to="/employer/verify">
             <button className="signup-btn">Next</button>
           </Link>
         </div>
         <div className="existing-user-alt">
           <p>
-            Already have an account? <Link to = "/employer/login">Login</Link>
+            Already have an account? <Link to="/employer/login">Login</Link>
           </p>
         </div>
       </div>

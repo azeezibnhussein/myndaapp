@@ -61,6 +61,21 @@
 	outline: 0;
 }
 
+.gender {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 1.5em;
+}
+
+.gender-select {
+	background: #F3F5F7;
+	padding: 1em;
+	border: none;
+	width: 95%;
+	font-family: montserrat;
+}
+
 .form-items input [type= select] {
 	width: 100%;
 	padding: 16px 20px;
