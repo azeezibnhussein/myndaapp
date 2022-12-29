@@ -30,24 +30,30 @@ function SignupForm() {
         </div>
         <form>
           <div className="form-items">
-            <FormItem
-              name="name"
-              type="text"
-              placeholder="First and last name"
-              label="Name"
-            ></FormItem>
-            <FormItem
-              name="email"
-              type="email"
-              placeholder="Eg @gmail.com"
-              label="Email"
-            ></FormItem>
-            <FormItem
-              name="phoneNumber"
-              type="text"
-              placeholder="Eg +234"
-              label="Phone Number"
-            ></FormItem>
+            <div>
+              <label>Name</label>
+              <input
+                name="name"
+                type="text"
+                placeholder="First and last name"
+              />
+            </div>
+            <div>
+              <label>Email</label>
+              <input
+                name="email"
+                type="email"
+                placeholder="Eg @gmail.com"
+              />
+            </div>
+            <div>
+              <label>Phone Number</label>
+              <input
+                name="phoneNumber"
+                type="text"
+                placeholder="Eg +234"
+              />
+            </div>
             <div className="gender">
               <label>Gender</label>
               <select className="gender-select">
@@ -55,24 +61,30 @@ function SignupForm() {
                 <option value="female">Female</option>
               </select>
             </div>
-            <FormItem
-              name="residentialAddress"
-              type="text-area"
-              placeholder="House No, street, state"
-              label="Residential Address"
-            ></FormItem>
-            <FormItem
-              name="password"
-              type="password"
-              placeholder="Enter password"
-              label="Password"
-            ></FormItem>
-            <FormItem
-              name="retypePassword"
-              type="password"
-              placeholder="Retype Password"
-              label="Retype Password"
-            ></FormItem>
+            <div>
+              <label>Residential Address</label>
+              <input
+                name="residentialAddress"
+                type="text-area"
+                placeholder="House No, street, state"
+              />
+            </div>
+            <div>
+              <label>Password</label>
+              <input
+                name="password"
+                type="password"
+                placeholder="Enter password"
+              />
+            </div>
+            <div>
+              <label>Retype Password</label>
+              <input
+                name="retypePassword"
+                type="password"
+                placeholder="Retype Password"
+              />
+            </div>
           </div>
         </form>
         <div className="terms-and-conditions-link">
@@ -98,27 +110,27 @@ function SignupForm() {
   );
 }
 
-function FormItem(props) {
-  const { Icon } = props;
-  return (
-    <form>
-      <div className="form-item">
-        <label className="forms-items" htmlFor={props.name}>
-          {props.label}
-        </label>
-        <div className="input-container">
-          <span>{Icon && <Icon />}</span>
-          <input
-            type={props.type}
-            className="form-control input"
-            id={props.name}
-            placeholder={props.placeholder}
-            onChange={(e) => props.changeFunction(e)}
-          />
-        </div>
-      </div>
-    </form>
-  );
-}
+// function FormItem(props) {
+//   const { Icon } = props;
+//   return (
+//     <form>
+//       <div className="form-item">
+//         <label className="forms-items" htmlFor={props.name}>
+//           {props.label}
+//         </label>
+//         <div className="input-container">
+//           <span>{Icon && <Icon />}</span>
+//           <input
+//             type={props.type}
+//             className="form-control input"
+//             id={props.name}
+//             placeholder={props.placeholder}
+//             onChange={(e) => props.changeFunction(e)}
+//           />
+//         </div>
+//       </div>
+//     </form>
+//   );
+// }
 
 export default Signup;
