@@ -31,7 +31,7 @@
 	line-height: 24px;
 }
 
-.form-items label{
+form label{
 	text-align: left;
 	display: flex;
 	font-weight: 500;
@@ -41,7 +41,7 @@
 	padding-bottom: 0.5em;
 }
 
-.form-items input{
+form input{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -76,15 +76,7 @@
 	font-family: montserrat;
 }
 
-.form-items input [type= select] {
-	width: 100%;
-	padding: 16px 20px;
-	border: none;
-	border-radius: 4px;
-	background-color: #f1f1f1;
-}
-
-.form-items input[type= text-area] {
+form input[type= text-area] {
 	padding-bottom: 5em;
 }
 

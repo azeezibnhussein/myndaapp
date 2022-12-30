@@ -57,6 +57,7 @@ function SignupForm() {
             <div className="gender">
               <label>Gender</label>
               <select className="gender-select">
+                <option selected value="selectGender">Select Gender</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
               </select>
